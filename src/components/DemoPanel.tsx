@@ -3,7 +3,7 @@ import React from 'react';
 
 const DemoPanel = () => {
     return (
-        <div className="hidden lg:flex flex-col justify-center space-y-8 rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-indigo-500/10 p-10 backdrop-blur-sm">
+        <div className="flex flex-col justify-center space-y-6 lg:space-y-8 rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-indigo-500/10 p-6 sm:p-8 lg:p-10 backdrop-blur-sm">
             <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400">
                     <span className="relative flex h-2 w-2">
@@ -12,13 +12,13 @@ const DemoPanel = () => {
                     </span>
                     Live Demo Environment
                 </div>
-                <h2 className="text-3xl font-bold text-white leading-tight">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-tight">
                     Experience the Future of <br className="hidden xl:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-indigo-300">
                         Property Management
                     </span>
                 </h2>
-                <p className="text-slate-300 text-lg leading-relaxed">
+                <p className="hidden sm:block text-slate-300 text-sm sm:text-lg leading-relaxed">
                     This website is fully functional in real-time. Feel free to create your own account to manage properties,
                     or explore the platform instantly with our demo credentials.
                 </p>
@@ -42,7 +42,7 @@ const DemoPanel = () => {
                         </div>
                         <button
                             onClick={() => navigator.clipboard.writeText('admin@gmail.com')}
-                            className="text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100"
+                            className="text-slate-500 hover:text-white transition opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
                             title="Copy Email"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,7 +58,7 @@ const DemoPanel = () => {
                         </div>
                         <button
                             onClick={() => navigator.clipboard.writeText('admin123')}
-                            className="text-slate-500 hover:text-white transition opacity-0 group-hover:opacity-100"
+                            className="text-slate-500 hover:text-white transition opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
                             title="Copy Password"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -73,3 +73,4 @@ const DemoPanel = () => {
 };
 
 export default DemoPanel;
+
