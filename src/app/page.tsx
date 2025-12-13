@@ -177,7 +177,7 @@ export default async function Home() {
           className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl shadow-cyan-500/10 sm:p-8 md:p-12"
         >
           <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/5 to-transparent" />
-          <div className="relative grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="relative grid w-full grid-cols-1 items-start gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:items-center">
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold text-cyan-200">
                 Built for modern landlords
