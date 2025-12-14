@@ -67,10 +67,26 @@ const DemoPanel = () => {
                         </button>
                     </div>
                 </div>
+                {/* Initial Login Notice */}
+                <div className="flex items-start gap-3 rounded-xl bg-gradient-to-r from-amber-500/10 to-orange-500/10 p-4 border border-amber-500/20">
+                    <div className="flex-shrink-0 mt-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-amber-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                        </svg>
+                    </div>
+                    <div className="flex-1 space-y-1">
+                        <p className="text-sm font-semibold text-amber-300">First-time Login Notice</p>
+                        <p className="text-xs text-slate-300 leading-relaxed">
+                            Initial login may take <span className="font-semibold text-amber-200">10-15 seconds</span> as the MongoDB server spins up.
+                            Subsequent logins will be instant.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );
 };
 
 export default DemoPanel;
+
 
